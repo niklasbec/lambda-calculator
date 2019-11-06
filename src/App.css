@@ -8,6 +8,7 @@
 }
 .display {
     margin-top: 25px;
+    margin-left: 25px;
     height: 100px;
     width: 450px;
     border-radius: 50px;
@@ -20,3 +21,39 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+.logo-container {
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+
+.buttons-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.operator-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-right: 35px;
+}
+
+.operator-buttons button{
+    background-color: rgb(22, 70, 230);
+}
+
+button {
+  border-radius: 50%; 
+  width: 5rem;
+  height: 5rem;
+  margin-left: 3rem;
+  margin-top: 0.5rem;  
+  background-color: blue;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.all-buttons {
+    display: flex;
+}

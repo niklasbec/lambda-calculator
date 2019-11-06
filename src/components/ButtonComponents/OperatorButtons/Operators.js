@@ -1,4 +1,5 @@
 import React from "react";
+import {operators} from '../../../data'
 
 //import any components needed
 
@@ -7,10 +8,13 @@ import React from "react";
 const Operators = () => {
   // STEP 2 - add the imported data to state
   return (
-    <div>
-      {/* STEP 3 - Use .map() to iterate over your array data and return a button
-       component matching the name on the provided file. Pass
-       it any props needed by the child component*/}
+    <div className='operator-buttons'>
+      {operators.map((currentOperator, index) => {
+        return (
+          <button>{currentOperator.char}</button>
+        )
+      })}
     </div>
-  );
-};
+  )}
+
+export default Operators
